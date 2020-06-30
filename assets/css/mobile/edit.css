@@ -1,0 +1,140 @@
+body {
+	padding-bottom: 0;
+}
+
+div.editBigContent {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+}
+div.editContent1 {
+	width: 100%;
+}
+div.editContent2 {
+	
+}
+div.contentItem {
+	width: 90%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin-top: 15px;
+}
+form.contentForm {
+	width: 100%;
+	margin: 0;
+	margin-bottom: 20px;
+	background-color: #ffffff;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, .1);
+}
+div.divTitle {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	background-color: rgba(77, 98, 196, 1);
+}
+h2.titleContent {
+	font-family: sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	color: rgba(255, 255, 255, 1);
+	padding: 10px 20px;
+	margin: 0;
+}
+
+label.title {
+	width: 240px;
+	text-align: left;
+	font-family: sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	text-align: left;
+	color: rgba(0, 0, 0, .6);
+	margin-bottom: 6px;
+}
+input.login {
+	padding: 0;
+	margin: 0;
+	width: 240px;
+	padding: 10px 12px;
+	outline: none;
+	border: none;
+	border: 1px solid rgba(0, 0, 0, .1);
+	background-color: transparent;
+	box-sizing: 0;
+	font-size: 14px;
+	border-radius: 6px;
+}
+
+textarea.login {
+	padding: 0;
+	margin: 0;
+	width: 240px;
+	max-width: 240px;
+	min-width: 240px;
+	padding: 10px 12px;
+	outline: none;
+	border: none;
+	border: 1px solid rgba(0, 0, 0, .1);
+	background-color: transparent;
+	box-sizing: 0;
+	font-size: 14px;
+	border-radius: 6px;
+	font-family: sans-serif;
+	resize: none;
+}
+
+select.login {
+	padding: 0;
+	margin: 0;
+	width: 240px;
+	padding: 10px 12px;
+	outline: none;
+	border: none;
+	border: 1px solid rgba(0, 0, 0, .1);
+	background-color: transparent;
+	box-sizing: 0;
+	border-radius: 6px;
+}
+
+select.login2 {
+	padding: 0;
+	margin: 0;
+	padding: 10px 12px;
+	outline: none;
+	border: none;
+	border: 1px solid rgba(0, 0, 0, .1);
+	background-color: transparent;
+	box-sizing: 0;
+	border-radius: 6px;
+}
+
+hr.end {
+	height: 0px;
+	width: 90%;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+button.save {
+	margin-bottom: 15px;
+	position: relative;
+	left: 0;
+	margin-top: 20px;
+	border-radius: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

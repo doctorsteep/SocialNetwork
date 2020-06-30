@@ -1,0 +1,542 @@
+* {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body, html {
+	padding: 0;
+	margin: 0;
+	background-color: rgb(245, 247, 255);
+	overflow-x: hidden;
+}
+
+body {
+	padding-top: 54px;
+	padding-bottom: 60px;
+	user-select: none;
+}
+
+a:active {
+	background-color: rgba(0, 0, 0, .4);
+	border-radius: 100px;
+}
+
+div.logoBar {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	padding: 0;
+	margin: 0;
+	margin-left: 20px;
+}
+i.bubble {
+	background-color: rgba(77, 98, 196, 1);
+	width: 7px;
+	height: 7px;
+	border-radius: 100%;
+	padding: 0;
+	margin: 0;
+	margin-left: 5px;
+}
+
+img.logo {
+	width: 32px;
+	max-width: 32px;
+	min-width: 32px;
+	height: auto;
+	max-height: auto;
+	min-height: auto;
+	margin-left: 15px;
+	image-rendering: optimizeSpeed;
+}
+
+img.imgBackBar {
+	width: 24px;
+	max-width: 24px;
+	min-width: 24px;
+	height: 24px;
+	max-height: 24px;
+	min-height: 24px;
+	user-select: none;
+	padding: 9px;
+	margin-left: 12px;
+	margin-right: 5px;
+}
+img.imgBackBar:active {
+	border-radius: 100%;
+	background-color: rgba(0, 0, 0, .1);
+}
+
+nav.bar {
+	background-color: #ffffff;
+	padding: 0;
+	margin: 0;
+	height: 54px;
+	width: 100%;
+	top: 0;
+	position: fixed;
+	display: flex;
+	align-items: center;
+	cursor: default;
+	user-select: none;
+	z-index: 100;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, .2);
+}
+
+h2.title {
+	padding: 0;
+	margin: 0;
+	color: rgba(0, 0, 0, .9);
+	font-size: 20px;
+	margin-left: 12px;
+	width: 100%;
+	font-family: sans-serif;
+	font-weight: 700;
+}
+
+button {
+	background-color: rgba(77, 98, 196, 1);
+	color: #ffffff;
+	padding: 12px 19px;
+	margin: 0;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	font-size: 15px;
+	border-radius: 4px;
+}
+button.signup {
+	background-color: #4ac229;
+}
+button.edit {
+	background-color: #edf0ff;
+	color: rgba(77, 98, 196, 1);
+}
+button:active {
+	opacity: .8;
+}
+
+div.userContent {
+	height: 100%;
+	max-width: 150px;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	padding: 0 10px;
+}
+div.userContent:active {
+	background-color: rgba(0, 0, 0, .1);
+}
+div.userMenu {
+	background-color: white;
+	position: absolute;
+	top: 50px;
+	right: 0;
+	width: 170px;
+	border-radius: 6px;
+	margin: 0 6px;
+	box-shadow: 0px 1px 5px rgba(0, 0, 0, .2);
+}
+div.userMenu:after, div.userMenu:before {
+	bottom: 90%;
+	left: 80%;
+	border: 1px solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+/*div.userMenu:after {
+	border-color: rgba(136, 183, 213, 0);
+	border-bottom-color: #ffffff;
+	border-width: 6px;
+	margin-left: -10px;
+}
+div.userMenu:before {
+	border-color: rgba(64, 90, 201, 0);
+	border-bottom-color: rgba(77, 98, 196, .4);
+	border-width: 7px;
+	margin-left: -11px;
+}*/
+ul.userUl {
+	list-style-type: none;
+	padding: 5px 0;
+	margin: 0;
+}
+li.userLi {
+	padding: 12px 18px;
+	font-family: sans-serif;
+	font-size: 15px;
+	color: rgba(0, 0, 0, .8);
+	cursor: pointer;
+	text-decoration: none;
+}
+li.userLi:active {
+	background-color: rgba(0, 0, 0, .1);
+}
+hr.li {
+	width: 90%;
+	height: 0px;
+	margin: 0 0;
+}
+
+a {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	box-sizing: 0;
+}
+
+h2.userName {
+	color:rgba(0, 0, 0, .7);
+	font-family: sans-serif;
+	font-size: 12px;
+	font-weight: 700;
+	text-align: right;
+	padding: 0;
+	margin: 0;
+	white-space: nowrap;
+}
+
+img.userAvatar {
+	width: 36px;
+	max-width: 36px;
+	min-width: 36px;
+	height: 36px;
+	max-height: 36px;
+	min-height: 36px;
+	object-fit: cover;
+	border-radius: 100%;
+	margin-right: 2px;
+	margin-left: 2px;
+	image-rendering: optimizeSpeed;
+}
+
+i.arrow {
+	border: solid rgba(77, 98, 196, 1);
+	border-width: 0 2px 2px 0;
+	display: inline-block;
+	padding: 2px;
+}
+i.down {
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+}
+i.up {
+	transform: rotate(-135deg);
+	-webkit-transform: rotate(-135deg);
+}
+
+hr {
+	width: 100%;
+	border: none;
+	outline: none;
+	height: 1px;
+	background-color: rgba(77, 98, 196, .3);
+}
+
+h2.titleBanned {
+	font-family: sans-serif;
+	font-weight: 700;
+	font-size: 21px;
+	color: rgba(34, 37, 46, 1);
+	padding: 0;
+	margin: 20px 2.5%;
+	margin-bottom: 10px;
+}
+h3.messageBanned {
+	font-family: sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	color: rgba(34, 37, 46, .6);
+	padding: 0;
+	margin: 0 2.5%;
+	margin-bottom: 20px;
+}
+div.divBanned {
+	display: flex;
+	align-items: center;
+	margin: 20px 2.5%;
+}
+
+div.friendsSearch {
+	display: none;
+	width: 230px;
+	max-height: 300px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	border-top: 1px solid rgba(0, 0, 0, .1);
+	background-color: rgba(255, 255, 255, 1);
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	top: 38px;
+	z-index: 200;
+}
+
+div.searchDiv {
+	width: 230px;
+	max-width: 230px;
+	min-width: 230px;
+	margin-left: 250px;
+}
+
+input.searchNav {
+	width: 100%;
+	border: none;
+	border-radius: 4px;
+	background-color: rgba(255, 255, 255, 1);
+	outline: none;
+	padding: 7px 15px;
+	font-weight: 500;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+}
+input.searchNav::placeholder {
+	color: rgba(0, 0, 0, .4);
+}
+input.searchNav:focus {
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	box-shadow: none;
+}
+input.searchNav:focus + div.friendsSearch {
+	display: block;
+}
+div.friendsSearch:hover {
+	display: block;
+}
+button.searchInput {
+	border-radius: 0;
+	width: 100%;
+	border-bottom-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+
+option.divider {
+	font-size: 1px;
+	background-color: rgba(77, 98, 196, .3);
+}
+
+
+
+div.listMyFriendFind {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+div-find.itemListFind:hover {
+	background-color: rgba(77, 98, 196, .2);
+}
+div-find.itemListFind {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	padding: 6px 0;
+}
+img.avatarUserFind {
+	width: 35px;
+	max-width: 35px;
+	min-width: 35px;
+	height: 35px;
+	max-height: 35px;
+	min-height: 35px;
+	user-select: none;
+	object-fit: cover;
+	border-radius: 100px;
+	margin-left: 10px;
+}
+name.userFindName {
+	font-family: sans-serif;
+	font-weight: 600;
+	font-size: 13px;
+	color: rgba(77, 98, 196, 1);
+	margin-left: 8px;
+}
+h2.titleFind {
+	font-family: sans-serif;
+	font-weight: 400;
+	font-size: 12px;
+	color: rgba(0, 0, 0, .5);
+	margin: 0;
+	padding: 0;
+	margin-bottom: 6px;
+	margin-top: 12px;
+	margin-left: 10px;
+}
+
+
+
+div.leftMenu {
+	width: 100%;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	padding: 0;
+	margin: 0;
+	position: fixed;
+	z-index: 22;
+	bottom: 0;
+	background-color: rgba(255, 255, 255, 1);
+	box-shadow: 0 0 7px rgba(0, 0, 0, .2);
+}
+ul.leftMenu {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 60px;
+	list-style-type: none;
+}
+li.itemLeftMenu {
+	padding: 7px 10px;
+	margin: 0;
+	cursor: pointer;
+	color: rgba(77, 98, 196, 1);
+	border-radius: 100%;
+	font-family: sans-serif;
+	font-weight: 500;
+	font-size: 13px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	white-space: nowrap;
+	width: 40px;
+	max-width: 40px;
+	min-width: 40px;
+	height: 40px;
+	max-height: 40px;
+	min-height: 40px;
+	text-align: left;
+}
+img.itemLeftMenu:hover {}
+img.leftMenu {
+	width: 18px;
+	height: 18px;
+}
+h2.moonLeft {
+	background-color: rgba(214, 0, 0, 1);
+	color: rgba(255, 255, 255, 1);
+	font-family: sans-serif;
+	font-weight: 600;
+	font-size: 9px;
+	padding: 3px 5px;
+	margin: 0;
+	position: absolute;
+	width: auto;
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 100px;
+	right: 9px;
+	top: 17px;
+	border: 2px solid rgba(255, 255, 255, 1);
+}
+
+
+
+
+
+p.message {
+	background-color: rgba(10, 10, 10, 1);
+	color: rgb(255, 255, 255, 1);
+	border-radius: 6px;
+	padding: 15px 18px;
+	font-weight: 600;
+	font-size: 13px;
+	font-family: sans-serif;
+	margin: 0;
+	display: block;
+	margin: 10px;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	z-index: 200;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, .2);
+	visibility: visible;
+	animation: 0s linear 5.3s forwards messageHide ;
+}
+p.warning {
+	background-color: rgba(252, 173, 13, 1);
+	color: rgba(255, 255, 255, 1);
+	box-shadow: 0px 1px 7px rgba(252, 173, 13, .5);
+}
+p.error {
+	background-color: rgba(212, 25, 25, 1);
+	color: rgba(255, 255, 255, 1);
+	box-shadow: 0px 1px 7px rgba(212, 25, 25, .5);
+}
+p.succes {
+	background-color: rgba(74, 194, 41, 1);
+	color: rgba(255, 255, 255, 1);
+	box-shadow: 0px 1px 7px rgba(74, 194, 41, .5);
+}
+
+@keyframes messageHide {
+	to {
+		visibility: hidden;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+div.hoverBottom {
+	width: 90%;
+	padding: 0;
+	display: inline-block;
+	margin: 0;
+	border-top: 1px solid rgba(77, 98, 196, .3);
+	margin-top: 50px;
+	margin-left: 90px;
+	margin-right: 90px;
+}
+div.hoverItemCategory {
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+	margin-left: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+h2.hoverMess {
+	padding: 0;
+	margin: 0;
+	font-weight: 500;
+	font-size: 12px;
+	font-family: sans-serif;
+	color: rgba(0, 0, 0, .6);
+	padding: 3px 0;
+}
+h2.hoverTitle {
+	padding: 0;
+	margin: 0;
+	font-weight: 800;
+	font-size: 13px;
+	font-family: sans-serif;
+	color: rgba(0, 0, 0, .9);
+	margin-bottom: 10px;
+}
+
+img.imgVerificationPost {
+	width: 12px;
+	height: 12px;
+	user-select: none;
+	margin-left: 5px;
+	image-rendering: optimizeSpeed;
+}

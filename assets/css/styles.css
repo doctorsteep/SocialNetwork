@@ -1,0 +1,580 @@
+body, html {
+	padding: 0;
+	margin: 0;
+	background-color: rgb(245, 247, 255);
+	overflow-x: hidden;
+}
+
+body {
+	padding-top: 54px;
+	padding-left: 40px;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+div.logoBar {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	padding: 0;
+	margin: 0;
+	margin-left: 20px;
+}
+i.bubble {
+	background-color: rgba(77, 98, 196, 1);
+	width: 7px;
+	height: 7px;
+	border-radius: 100%;
+	padding: 0;
+	margin: 0;
+	margin-left: 5px;
+}
+
+img.logo {
+	width: 32px;
+	max-width: 32px;
+	min-width: 32px;
+	height: auto;
+	max-height: auto;
+	min-height: auto;
+	margin-left: 15px;
+	image-rendering: optimizeSpeed;
+}
+
+img.imgBackBar {
+	width: 24px;
+	height: 24px;
+	user-select: none;
+	padding: 9px;
+	margin-left: 12px;
+}
+img.imgBackBar:hover {
+	border-radius: 100%;
+	background-color: rgba(0, 0, 0, .1);
+}
+
+nav.bar {
+	background-color: #ffffff;
+	padding: 0;
+	margin: 0;
+	height: 54px;
+	width: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	position: fixed;
+	display: flex;
+	align-items: center;
+	cursor: default;
+	user-select: none;
+	z-index: 100;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, .1);
+}
+
+h2.title {
+	padding: 0;
+	margin: 0;
+	color: rgba(0, 0, 0, .9);
+	font-size: 15px;
+	margin-left: 10px;
+	width: 100%;
+	font-family: sans-serif;
+	font-weight: 700;
+	font-size: 13px;
+}
+
+button {
+	background-color: rgba(77, 98, 196, 1);
+	color: #ffffff;
+	padding: 8px 17px;
+	margin: 0;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	border-radius: 6px;
+}
+button.signup {
+	background-color: #4ac229;
+}
+button.edit {
+	background-color: #edf0ff;
+	color: rgba(77, 98, 196, 1);
+}
+button:hover {
+	opacity: .9;
+}
+
+div.userContent {
+	height: 100%;
+	max-width: 150px;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	padding: 0 10px;
+}
+div.userContent:hover {
+	background-color: rgba(0, 0, 0, .06);
+}
+div.userMenu {
+	background-color: white;
+	position: absolute;
+	top: 53px;
+	right: 0;
+	width: 150px;
+	border-radius: 4px;
+	margin: 0 4px;
+	box-shadow: 0px 1px 5px rgba(0, 0, 0, .2);
+}
+div.userMenu:after, div.userMenu:before {
+	bottom: 100%;
+	left: 80%;
+	border: 1px solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+/*div.userMenu:after {
+	border-color: rgba(136, 183, 213, 0);
+	border-bottom-color: #ffffff;
+	border-width: 6px;
+	margin-left: -10px;
+}
+div.userMenu:before {
+	border-color: rgba(64, 90, 201, 0);
+	box-shadow: 0px 1px 5px rgba(0, 0, 0, .2);
+	border-width: 7px;
+	margin-left: -11px;
+}*/
+ul.userUl {
+	list-style-type: none;
+	padding: 5px 0;
+	margin: 0;
+}
+li.userLi {
+	padding: 9px 15px;
+	font-family: sans-serif;
+	font-size: 13px;
+	color: rgba(77, 98, 196, .9);
+	cursor: pointer;
+	text-decoration: none;
+}
+li.userLi:hover {
+	background-color: rgba(77, 98, 196, .1);
+}
+hr.li {
+	width: 90%;
+	margin: 5px 0;
+}
+
+a {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	box-sizing: 0;
+}
+
+h2.userName {
+	color: rgba(0, 0, 0, .7);
+	font-family: sans-serif;
+	font-size: 12px;
+	font-weight: 700;
+	text-align: right;
+	padding: 0;
+	margin: 0;
+	white-space: nowrap;
+}
+
+img.userAvatar {
+	width: 30px;
+	max-width: 30px;
+	min-width: 30px;
+	height: 30px;
+	max-height: 30px;
+	min-height: 30px;
+	object-fit: cover;
+	border-radius: 100%;
+	margin-right: 8px;
+	margin-left: 8px;
+	image-rendering: optimizeSpeed;
+}
+
+i.arrow {
+	border: solid rgba(77, 98, 196, 1);
+	border-width: 0 2px 2px 0;
+	display: inline-block;
+	padding: 2px;
+}
+i.down {
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+}
+i.up {
+	transform: rotate(-135deg);
+	-webkit-transform: rotate(-135deg);
+}
+
+hr {
+	width: 100%;
+	border: none;
+	outline: none;
+	height: 1px;
+	background-color: rgba(77, 98, 196, .3);
+}
+
+h2.titleBanned {
+	font-family: sans-serif;
+	font-weight: 700;
+	font-size: 21px;
+	color: rgba(34, 37, 46, 1);
+	padding: 0;
+	margin: 20px 2.5%;
+	margin-bottom: 10px;
+}
+h3.messageBanned {
+	font-family: sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	color: rgba(34, 37, 46, .6);
+	padding: 0;
+	margin: 0 2.5%;
+	margin-bottom: 20px;
+}
+div.divBanned {
+	display: flex;
+	align-items: center;
+	margin: 20px 2.5%;
+}
+
+
+
+
+
+div.friendsSearch::-webkit-scrollbar {
+	width: 0px;  /* for vertical scrollbars */
+	height: 0px; /* for horizontal scrollbars */
+}
+
+div.friendsSearch::-webkit-scrollbar-track {
+	background: rgba(0, 0, 0, 0.1);
+}
+
+div.friendsSearch::-webkit-scrollbar-thumb {
+	background: rgba(0, 0, 0, 0.2);
+}
+
+div.friendsSearch {
+	display: none;
+	width: 210px;
+	max-height: 300px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	background-color: rgba(255, 255, 255, 1);
+	border-radius: 6px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	top: 50px;
+	z-index: 200;
+}
+
+div.searchDiv {
+	width: 210px;
+	max-width: 210px;
+	min-width: 210px;
+	margin-left: 190px;
+}
+
+input.searchNav {
+	width: 100%;
+	border: solid 1px transparent;
+	border-radius: 6px;
+	background-color: rgba(0, 0, 0, .06);
+	outline: none;
+	padding: 7px 15px;
+	font-weight: 500;
+}
+input.searchNav::placeholder {
+	color: rgba(0, 0, 0, .5);
+}
+input.searchNav:focus {
+	background-color: transparent;
+	box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+}
+input.searchNav:focus + div.friendsSearch {
+	display: block;
+}
+div.friendsSearch:hover {
+	display: block;
+}
+button.searchInput {
+	border-radius: 0;
+	width: 100%;
+	border-bottom-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+
+option.divider {
+	font-size: 1px;
+	background-color: rgba(77, 98, 196, .3);
+}
+
+
+
+div.listMyFriendFind {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+div-find.itemListFind:hover {
+	background-color: rgba(77, 98, 196, .2);
+}
+div-find.itemListFind {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	padding: 6px 0;
+}
+img.avatarUserFind {
+	width: 35px;
+	max-width: 35px;
+	min-width: 35px;
+	height: 35px;
+	max-height: 35px;
+	min-height: 35px;
+	user-select: none;
+	object-fit: cover;
+	border-radius: 100px;
+	margin-left: 10px;
+}
+name.userFindName {
+	font-family: sans-serif;
+	font-weight: 600;
+	font-size: 13px;
+	color: rgba(77, 98, 196, 1);
+	margin-left: 8px;
+}
+h2.titleFind {
+	font-family: sans-serif;
+	font-weight: 400;
+	font-size: 12px;
+	color: rgba(0, 0, 0, .5);
+	margin: 0;
+	padding: 7px 10px;
+	background-color: rgba(0, 0, 0, .06);
+	margin-bottom: 6px;
+	margin-top: 12px;
+}
+
+
+
+div.leftMenu {
+	width: 60px;
+	height: 100vh;
+	padding: 0;
+	margin: 0;
+	position: fixed;
+	z-index: 20;
+	left: 0;
+	top: 54px;
+	background-color: rgba(255, 255, 255, 1);
+	box-shadow: 0 0 7px rgba(0, 0, 0, .2);
+}
+ul.leftMenu {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+li.itemLeftMenu {
+	padding: 7px 10px;
+	margin: 0;
+	cursor: pointer;
+	color: rgba(77, 98, 196, 1);
+	border-radius: 100%;
+	font-family: sans-serif;
+	font-weight: 500;
+	font-size: 13px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	white-space: nowrap;
+	width: 40px;
+	max-width: 40px;
+	min-width: 40px;
+	height: 40px;
+	max-height: 40px;
+	min-height: 40px;
+	text-align: left;
+}
+img.itemLeftMenu:hover {}
+img.leftMenu {
+	width: 18px;
+	height: 18px;
+}
+h2.moonLeft {
+	background-color: rgba(214, 0, 0, 1);
+	color: rgba(255, 255, 255, 1);
+	font-family: sans-serif;
+	font-weight: 600;
+	font-size: 9px;
+	padding: 3px 5px;
+	margin: 0;
+	position: absolute;
+	width: auto;
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 100px;
+	right: 9px;
+	top: 17px;
+	border: 2px solid rgba(255, 255, 255, 1);
+}
+
+
+
+
+
+p.message {
+	background-color: rgba(10, 10, 10, 1);
+	color: rgb(255, 255, 255, 1);
+	border-radius: 6px;
+	padding: 15px 18px;
+	font-weight: 600;
+	font-size: 13px;
+	font-family: sans-serif;
+	margin: 0;
+	display: block;
+	margin: 10px;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	z-index: 200;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, .2);
+	visibility: visible;
+	animation: 0s linear 5.3s forwards messageHide ;
+}
+p.warning {
+	background-color: rgba(252, 173, 13, 1);
+	color: rgba(255, 255, 255, 1);
+	box-shadow: 0px 1px 7px rgba(252, 173, 13, .5);
+}
+p.error {
+	background-color: rgba(212, 25, 25, 1);
+	color: rgba(255, 255, 255, 1);
+	box-shadow: 0px 1px 7px rgba(212, 25, 25, .5);
+}
+p.succes {
+	background-color: rgba(74, 194, 41, 1);
+	color: rgba(255, 255, 255, 1);
+	box-shadow: 0px 1px 7px rgba(74, 194, 41, .5);
+}
+
+@keyframes messageHide {
+	to {
+		visibility: hidden;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+[tooltip]:hover:after {
+    opacity: 1;
+    visibility: visible;
+    left: 100%;
+}
+[tooltip]:after {
+    content: attr(tooltip);
+    background-color: #ffffff;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    border: none;
+    border-radius: 0px;
+    color: rgba(77, 98, 196, 1);
+    border-right: 3px solid rgba(77, 98, 196, 1);
+    position: absolute;
+    margin: 0;
+    text-decoration: none;
+    box-shadow: 4px 0 7px rgba(0, 0, 0, .2);
+    padding: 0;
+    padding-left: 10px;
+    padding-right: 20px;
+    left: -50%;
+    opacity: 0;
+    z-index: -1;
+    visibility: hidden;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+}
+[tooltip] {
+    position: relative;
+}
+
+
+
+
+
+div.hoverBottom {
+	width: 90%;
+	padding: 0;
+	display: inline-block;
+	margin: 0;
+	border-top: 1px solid rgba(77, 98, 196, .3);
+	margin-top: 50px;
+	margin-left: 90px;
+	margin-right: 90px;
+}
+div.hoverItemCategory {
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+	margin-left: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+h2.hoverMess {
+	padding: 0;
+	margin: 0;
+	font-weight: 500;
+	font-size: 12px;
+	font-family: sans-serif;
+	color: rgba(0, 0, 0, .6);
+	padding: 3px 0;
+}
+h2.hoverTitle {
+	padding: 0;
+	margin: 0;
+	font-weight: 800;
+	font-size: 13px;
+	font-family: sans-serif;
+	color: rgba(0, 0, 0, .9);
+	margin-bottom: 10px;
+}
+
+img.imgVerificationPost {
+	width: 10px;
+	height: 10px;
+	user-select: none;
+	margin-left: 5px;
+}

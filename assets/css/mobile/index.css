@@ -1,0 +1,136 @@
+body, html {
+	margin: 0;
+	padding: 0;
+	background-color: rgba(255, 255, 255, 1);
+}
+button.signup {
+	width: 100%;
+	box-sizing: 0;
+	background-color: #4ac229;
+	margin-bottom: 20px;
+}
+button.signin {
+	width: 100%;
+	margin-top: 10px;
+	box-sizing: 0;
+	background-color: rgba(77, 98, 196, 1);
+	margin-bottom: 20px;
+}
+
+form.content {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	background-color: transparent;
+}
+
+input.login {
+	padding: 0;
+	margin: 0;
+	width: auto;
+	padding: 12px 15px;
+	outline: none;
+	border: none;
+	border: 2px solid rgba(0, 0, 0, .1);
+	background-color: transparent;
+	box-sizing: 0;
+	border-radius: 4px;
+}
+input.login:hover {
+	border: 2px solid rgba(77, 98, 196, .1);
+}
+input.login:focus {
+	border: 2px solid rgba(77, 98, 196, 1);
+}
+
+select.login {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	padding: 10px 15px;
+	outline: none;
+	border: none;
+	border: 2px solid rgba(0, 0, 0, .1);
+	background-color: transparent;
+	box-sizing: 0;
+	border-radius: 4px;
+}
+select.login2 {
+	padding: 0;
+	margin: 0;
+	padding: 10px 15px;
+	outline: none;
+	border: none;
+	border: 2px solid rgba(0, 0, 0, .1);
+	background-color: transparent;
+	box-sizing: 0;
+	border-radius: 4px;
+}
+
+label.title {
+	font-size: 11px;
+	color: rgba(77, 98, 196, 1);
+	padding: 5px;
+	margin-top: 10px;
+	margin-bottom: 4px;
+	margin-left: 10px;
+	font-family: sans-serif;
+	font-weight: bold;
+	position: relative;
+	top: 10px;
+	max-width: 85px;
+	text-align: left;
+	white-space: nowrap;
+	background-color: rgba(255, 255, 255, 1);
+}
+
+h4.info {
+	font-size: 12px;
+	margin-left: 6px;
+	color: #6a6a6a;
+	font-weight: normal;
+	font-family: sans-serif;
+}
+
+div.content {
+	display: block;
+	width: 300px;
+}
+div.content2 {
+	display: block;
+	width: 300px;
+}
+div.bigContent {
+	display: block;
+}
+
+div.hover {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	padding: 0;
+	margin: 0;
+	margin-top: 20px;
+	padding-bottom: 20px;
+}
+
+hr {
+	width: 95%;
+}
+
+h2.hoverInfo {
+	color: rgba(115, 119, 133, 1);
+	font-family: sans-serif;
+	font-weight: 400;
+	font-size: 12px;
+	padding: 0;
+	margin: 0;
+	margin-left: 2.5%;
+}
+
+img.favicon {
+	width: 50px;
+	height: 50px;
+	margin: 20px;
+	margin-top: 40px;
+}

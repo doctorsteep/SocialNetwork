@@ -1,0 +1,392 @@
+body {
+	overflow-y: hidden;
+	overflow-x: hidden;
+	outline: none;
+}
+h2.nameUser {
+	font-family: sans-serif;
+	font-weight: 500;
+	font-size: 18px;
+	color: rgba(0, 0, 0, .9);
+	padding: 0;
+	margin: 0;
+}
+h2.descriptionUser {
+	font-family: sans-serif;
+	font-weight: 400;
+	font-size: 13px;
+	color: rgba(0, 0, 0, .9);
+	padding: 0;
+	margin: 0;
+	margin-top: 6px;
+}
+
+div.homePage {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	background-color: #ffffff;
+}
+nav.topBar {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 54px;
+	padding: 0;
+	margin: 0;
+	position: fixed;
+	top: 0;
+	background-color: #ffffff;
+	z-index: 100;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, .2);
+}
+
+div.userMessage {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	padding: 0 10px;
+	cursor: pointer;
+}
+div.userMessage:active {
+	background-color: rgba(0, 0, 0, .1);
+}
+
+img.avatarMessageUserTitle {
+	width: 36px;
+	max-width: 36px;
+	min-width: 36px;
+	height: 36px;
+	max-height: 36px;
+	min-height: 36px;
+	object-fit: cover;
+	border-radius: 100px;
+	margin-right: 2px;
+	margin-left: 2px;
+	user-select: none;
+}
+
+h2.userNameTopBar {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	margin-left: 12px;
+	text-align: left;
+	font-family: sans-serif;
+	font-weight: 600;
+	font-size: 20px;
+	color: rgba(0, 0, 0, .9);
+}
+
+div.bottomMess {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	margin: 0;
+	background-color: #ffffff;
+	display: flex;
+	align-items: center;
+	z-index: 100;
+	box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+}
+
+form.bottomMess {
+	margin: 10px;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
+
+input.mess {
+	width: 100%;
+	outline: none;
+	background-color: transparent;
+	border-radius: 100px;
+	margin-right: 10px;
+	padding: 13px 16px;
+	border: none;
+	color: rgba(0, 0, 0, .8);
+}
+
+div.itemMess {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	border-radius: 100px;
+	background-color: rgba(0, 0, 0, .06);
+	align-items: center;
+}
+div.itemSea {
+	width: 100%;
+	padding: 0;
+	margin: 10px;
+	display: flex;
+	border-radius: 100px;
+	background-color: rgba(0, 0, 0, .06);
+	align-items: center;
+}
+
+img.send {
+	width: 21px;
+	height: 21px;
+	padding: 6px;
+	user-select: none;
+	opacity: .6;
+	cursor: pointer;
+}
+img.send:hover {
+	opacity: .8;
+}
+button.send {
+	padding: 0;
+	margin: 0;
+	background-color: transparent;
+}
+
+div.messagePageList {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
+div.messagePageList::-webkit-scrollbar {
+	width: 5px;  /* for vertical scrollbars */
+	height: 5px; /* for horizontal scrollbars */
+	border-radius: 100px;
+}
+
+div.messagePageList::-webkit-scrollbar-track {
+	background: rgba(0, 0, 0, 0.06);
+	border-radius: 100px;
+}
+
+div.messagePageList::-webkit-scrollbar-thumb {
+	background: rgba(0, 0, 0, 0.12);
+	border-radius: 100px;
+}
+
+
+
+
+h2.no_posts {
+	font-family: sans-serif;
+	font-weight: 500;
+	font-size: 13px;
+	color: rgba(0, 0, 0, .6);
+	width: 100%;
+	text-align: center;
+	padding: 50px 0;
+}
+
+div.contentAll {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+div.chatsPage {
+	width: 100%;
+	height: 100vh;
+	padding: 0;
+	max-height: 500px;
+	margin: 10px;
+	background-color: #ffffff;
+	border-radius: 6px;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, .1);
+}
+div.pageListMyChats {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+h2.chatUserName {
+	font-family: sans-serif;
+	font-weight: 600;
+	font-size: 13px;
+	color: rgba(77, 98, 196, 1);
+	width: 100%;
+	text-align: left;
+}
+div.nameItemUserChat {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	margin-left: 0px;
+}
+div.itemChatList {
+	padding: 0;
+	margin: 0;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	padding: 10px 0;
+}
+div.itemChatList:hover {
+	background-color: rgba(77, 98, 196, .2);
+}
+img.avatarChatUserTitle {
+	width: 36px;
+	max-width: 36px;
+	min-width: 36px;
+	height: 36px;
+	max-height: 36px;
+	min-height: 36px;
+	user-select: none;
+	border-radius: 100px;
+	margin-left: 10px;
+	object-fit: cover;
+}
+div.contentPage {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+h2.errorMessage {
+	font-family: sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	color: rgba(0, 0, 0, .6);
+	padding: 16px;
+}
+
+
+
+
+
+div.itemMessage {
+	width: 100%;
+	padding: 0;
+	margin: 14px 0;
+	display: flex;
+}
+img.avatarMessageItem {
+	width: 35px;
+	max-width: 35px;
+	min-width: 35px;
+	height: 35px;
+	max-height: 35px;
+	min-height: 35px;
+	border-radius: 100px;
+	user-select: none;
+	object-fit: cover;
+	margin-right: 10px;
+	margin-top: 5px;
+}
+div.messageContentItem {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	margin-left: 14px;
+	margin-top: 3px;
+	display: flex;
+	align-items: center;
+}
+div.ggISet {
+	display: block;
+	width: 100%;
+}
+div.otherMessageContentItem {
+	display: block;
+	position: inherit;
+	float: right;
+}
+div.iMessageContentItem {
+	display: block;
+	position: inherit;
+	float: left;
+}
+div.userNameContent {
+	display: flex;
+	align-items: center;
+	padding: 0;
+	margin: 0;
+}
+div.msContentItem {
+	padding: 0;
+	margin: 0;
+	display: block;
+	min-width: 170px;
+	max-width: 260px;
+	border-radius: 12px;
+	padding: 10px;
+}
+div.otherContentItem {
+	background-color: rgba(0, 0, 0, .07);
+	color: rgba(0, 0, 0, .9);
+}
+div.iContentItem {
+	background-color: rgba(77, 98, 196, 1);
+	color: rgba(255, 255, 255, .9);
+}
+h2.messageItem {
+	font-family: sans-serif;
+	font-weight: 500;
+	font-size: 13px;
+	color: rgba(0, 0, 0, 1);
+	padding: 0;
+	margin: 0;
+	min-width: 170px;
+	max-width: 260px;
+	text-align: left;
+}
+h2.otherMessageItem {
+	color: rgba(0, 0, 0, .9);
+}
+h2.iMessageItem {
+	color: rgba(255, 255, 255, .9);
+}
+div.sdfhhghbvxhcb {
+	display: flex;
+}
+img.imageMessageItem {
+	height: auto;
+	width: 160px;
+	max-width: 160px;
+	min-width: 160px;
+	border-radius: 6px;
+	outline: none;
+	user-select: none;
+	cursor: pointer;
+}
+h2.userNameMessageItem {
+	font-family: sans-serif;
+	font-weight: 500;
+	font-size: 10px;
+	color: rgba(0, 0, 0, .4);
+	padding: 0;
+	margin: 0;
+	min-width: 170px;
+	margin-top: 6px;
+	text-align: left;
+}
+h2.otherUserNameMessageItem {
+	color: rgba(0, 0, 0, .4);
+}
+h2.iUserNameMessageItem {
+	color: rgba(255, 255, 255, .4);
+}
+div.itemMessage:hover + div.menuMessageItem {
+	display: flex;
+	cursor: pointer;
+}
+div.menuMessageItem {
+	height: 20px;
+	display: flex;
+	align-items: center;
+}
+img.itemMenuMessage {
+	width: 14px;
+	height: 14px;
+	padding: 2px;
+	opacity: .3;
+	margin-left: 10px;
+	cursor: pointer;
+}
+img.itemMenuMessage:hover {
+	opacity: .8;
+}

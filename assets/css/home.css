@@ -1,0 +1,245 @@
+hr.banned {
+	width: 95%;
+}
+
+div.postItem {
+	width: 480px;
+	padding: 15px;
+	margin: 10px;
+	background-color: #ffffff;
+	border-radius: 6px;
+	box-shadow: 0px 1px 5px rgba(0, 0, 0, .2);
+}
+div.userPostItem {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	display: flex;
+}
+div.nameUserPostItem {
+	padding: 0;
+	margin: 0;
+	margin-left: 10px;
+	width: 100%;
+}
+div.postItemContent {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	margin-top: 14px;
+}
+div.imgPostItem {
+	display: flex;
+	padding: 0;
+	margin: 0;
+}
+div.divPostDate {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	margin-top: 3px;
+}
+div.divPostUserName {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	align-items: center;
+}
+img.avatarUserPost {
+	width: 35px;
+	min-width: 35px;
+	max-width: 35px;
+	height: 35px;
+	max-height: 35px;
+	min-height: 35px;
+	object-fit: cover;
+	cursor: pointer;
+	border-radius: 100px;
+	user-select: none;
+	image-rendering: optimizeSpeed;
+}
+img.postDevice {
+	width: 12px;
+	max-width: 12px;
+	min-width: 12px;
+	height: 12px;
+	max-height: 12px;
+	min-height: 12px;
+	user-select: none;
+	image-rendering: optimizeSpeed;
+	opacity: .4;
+	margin: 0;
+	padding: 0;
+	margin-left: 6px;
+}
+h2.postUserName {
+	color: rgba(77, 98, 196, 1);
+	font-family: sans-serif;
+	font-weight: 700;
+	font-size: 14px;
+	padding: 0;
+	margin: 0;
+	white-space: nowrap;
+	text-align: left;
+}
+h2.postUserRepost {
+	color: rgba(0, 0, 0, .4);
+	font-family: sans-serif;
+	font-weight: 600;
+	font-size: 11px;
+	margin: 0;
+	padding: 7px 13px;
+	border-radius: 100px;
+	background-color: rgba(0, 0, 0, .1);
+	margin-right: 15px;
+	margin-top: 15px;
+	text-align: left;
+	white-space: nowrap;
+}
+a {
+	color: rgba(0, 0, 0, .6);
+}
+h2.postDate {
+	color: rgba(0, 0, 0, .5);
+	font-family: sans-serif;
+	font-weight: 500;
+	font-size: 11px;
+	padding: 0;
+	margin: 0;
+}
+h2.postMessage {
+	font-family: sans-serif;
+	font-size: 13px;
+	font-weight: 500;
+	color: rgba(0, 0, 0, .9);
+	padding: 0;
+	margin: 0;
+	text-align: left;
+}
+img.imgPostMessage {
+	height: 240px;
+	max-height: 240px;
+	min-height: 240px;
+	width: auto;
+	user-select: none;
+	image-rendering: optimizeSpeed;
+}
+div.dataPostItem {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	align-items: center;
+}
+i.menuPost {
+	width: 17px;
+	height: 17px;
+	padding: 5px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+i.menuPost:hover {
+	background-color: rgba(0, 0, 0, .1);
+	border-radius: 100%;
+}
+img.menuPost {
+	width: 17px;
+	height: 17px;
+	opacity: .7;
+	user-select: none;
+}
+ul.listMenuPost {
+	list-style-type: none;
+	padding: 5px 0;
+	margin: 0;
+}
+li.itemMenuPost {
+	padding: 7px 13px;
+	font-family: sans-serif;
+	font-size: 13px;
+	color: rgba(0, 0, 0, .9);
+	cursor: pointer;
+	text-decoration: none;
+	text-align: left;
+}
+li.itemMenuPost:hover {
+	background-color: rgba(0, 0, 0, .1);
+}
+div.typePostItems {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	align-items: center;
+}
+
+
+div.contentAll {
+	padding: 0;
+	margin: 0;
+}
+div.contentPage {
+	padding: 0;
+	margin: 0;
+}
+
+
+
+
+
+
+.tooltipMenu {
+	position: relative;
+	display: inline-block;
+	margin-right: 0;
+}
+
+.tooltipMenu .tooltipTextMenu {
+	width: 150px;
+	visibility: hidden;
+	background-color: #ffffff;
+	color: #121212;
+	font-family: sans-serif;
+	font-size: 13px;
+	font-weight: 500;
+	border-radius: 6px;
+	box-shadow: 0px 1px 5px rgba(0, 0, 0, .1);
+	padding: 0;
+	position: absolute;
+	z-index: 102;
+	top: 20%;
+	left: 50%;
+	margin-left: -140px;
+	opacity: 0;
+}
+
+.tooltipMenu .tooltipTextMenu::after {
+	content: "";
+	position: absolute;
+	bottom: 100%;
+	left: 66.5%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: transparent;
+	border-bottom-color: transparent;
+}
+
+.tooltipMenu .tooltipTextMenu::before {
+	content: "";
+	position: absolute;
+	bottom: 100%;
+	left: 66.5%;
+	margin-left: -6px;
+	border-width: 6px;
+	border-style: solid;
+	border-color: transparent;
+	border-bottom-color: transparent;
+}
+
+.tooltipMenu:hover .tooltipTextMenu {
+	visibility: visible;
+	opacity: 1;
+}

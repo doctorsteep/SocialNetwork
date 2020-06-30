@@ -1,0 +1,174 @@
+button.signup {
+	width: 100%;
+	box-sizing: 0;
+}
+button.signin {
+	width: 100px;
+	margin-top: 10px;
+	box-sizing: 0;
+}
+
+form.content {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	margin: 10px;
+	background-color: #ffffff;
+	border-radius: 6px;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, .1);
+}
+
+div.contentInfo {
+	width: 100%;
+	margin: 10px;
+}
+div.contentInfoData {
+	width: 100%;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	background-color: #ffffff;
+	border-radius: 6px;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, .1);
+}
+
+input.login {
+	padding: 0;
+	margin: 0;
+	width: auto;
+	padding: 8px 10px;
+	outline: none;
+	border: none;
+	border: 1px solid rgba(0, 0, 0, .1);
+	background-color: transparent;
+	box-sizing: 0;
+	border-radius: 4px;
+}
+input.login:hover {
+	border: 1px solid rgba(77, 98, 196, .1);
+}
+input.login:focus {
+	border: 1px solid rgba(77, 98, 196, .4);
+}
+
+select.login {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	padding: 7px 5px;
+	outline: none;
+	border: none;
+	border: 1px solid rgba(0, 0, 0, .1);
+	background-color: transparent;
+	box-sizing: 0;
+	border-radius: 4px;
+}
+select.login2 {
+	padding: 0;
+	margin: 0;
+	padding: 7px 5px;
+	outline: none;
+	border: none;
+	border: 1px solid rgba(0, 0, 0, .1);
+	background-color: transparent;
+	box-sizing: 0;
+	border-radius: 4px;
+}
+
+label.title {
+	font-size: 12px;
+	color: #222222;
+	margin-top: 10px;
+	margin-bottom: 4px;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+
+h4.info {
+	font-size: 12px;
+	margin-left: 6px;
+	color: #6a6a6a;
+	font-weight: normal;
+	font-family: sans-serif;
+}
+
+div.content {
+	display: block;
+	width: 240px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+div.content2 {
+	display: block;
+	width: 240px;
+	margin-left: 25px;
+	margin-right: 50px;
+}
+div.bigContent {
+	display: flex;
+	float: right;
+	width: 100%;
+}
+
+div.hover {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	padding: 0;
+	margin: 0;
+	margin-top: 20px;
+	padding-bottom: 20px;
+}
+
+hr {
+	width: 95%;
+}
+
+h2.hoverInfo {
+	color: rgba(115, 119, 133, 1);
+	font-family: sans-serif;
+	font-weight: 400;
+	font-size: 12px;
+	padding: 0;
+	margin: 0;
+	margin-left: 2.5%;
+}
+
+
+img.belarus {
+	width: 380px;
+}
+h2.titleBelarus {
+	font-family: sans-serif;
+	font-weight: 800;
+	font-size: 27px;
+	color: rgba(0, 0, 0, .9);
+	margin: 0;
+	padding: 0;
+}
+h2.messBelarus {
+	font-family: sans-serif;
+	font-weight: 600;
+	font-size: 17px;
+	color: rgba(0, 0, 0, .6);
+	margin: 0;
+	padding: 0;
+	margin-top: 20px;
+	max-width: 600px;
+}
+h2.mal {
+	width: 100%;
+	text-align: left;
+	font-family: sans-serif;
+	font-weight: 600;
+	font-size: 16px;
+	color: rgba(0, 0, 0, .6);
+	padding: 20px;
+}
+strong.mal {
+	color: rgba(0, 0, 0, .9);
+	font-weight: 800;
+}
