@@ -88,9 +88,13 @@
 		<?php
 			if (mysqli_num_rows($check_user_view) > 0) {
 				echo('<script src="js/cross_js.js?v=2"></script>');
-				echo('<title>' . $user_view['first_name'] . ' ' . $user_view['last_name'] . '</title>');
-				echo('<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>');
-				echo('<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>');
+				if ($user_view['banned'] == 0) {
+					echo('<title>' . $user_view['first_name'] . ' ' . $user_view['last_name'] . '</title>');
+				} else {
+					echo('<title>' . $string_no_user . '</title>');
+				}
+				echo('<script src="js/jquery.min.js"></script>');
+				echo('<script src="js/jquery-ui.min.js"></script>');
 			} else {
 				echo('<title>' . $string_no_user . '</title>');
 			}
@@ -293,7 +297,7 @@
 				if ($user_view['banned'] == 0) {
 					if ($detect_device->isMobile()) { echo('<div class="mobileDivUserBig">'); }
 					if ($detect_device->isMobile()) { echo('<div class="mobileDivNamesHor">'); }
-					if ($detect_device->isMobile()) { echo('<img class="mobileUserAvatar" draggable="false" oncontextmenu="return false" src="'); if ($user_view['avatar'] == '') { echo($url_no_avatar); } else { echo($user_view['avatar']); } echo('">'); }
+					if ($detect_device->isMobile()) { echo('<img class="mobileUserAvatar" id="liUpdatePhoto" draggable="false" oncontextmenu="return false" src="'); if ($user_view['avatar'] == '') { echo($url_no_avatar); } else { echo($user_view['avatar']); } echo('">'); }
 					if ($detect_device->isMobile()) { echo('<div class="mobileDivNamesVer">'); }
 					if ($detect_device->isMobile()) { echo('<div class="mobileDivNames">'); }
 					echo('<div class="divUserNick">');

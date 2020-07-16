@@ -1050,4 +1050,5 @@ img.mobileUserAvatar {
 	min-height: 80px;
 	user-select: none;
 	margin-right: 14px;
+	object-fit: cover;
 }

@@ -188,6 +188,61 @@ div.contentPage {
 
 
 
+div.divPostButtons {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	margin-top: 10px;
+}
+div.dataPostItem {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	align-items: center;
+}
+div.divPostItemButton {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	padding: 6px;
+	border-radius: 6px;
+}
+div.divPostItemButton:hover {
+	background-color: rgba(0, 0, 0, .1);
+}
+div.typePostItems {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	align-items: center;
+}
+img.postItemButton {
+	width: 20px;
+	max-width: 20px;
+	min-width: 20px;
+	height: 20px;
+	max-height: 20px;
+	min-height: 20px;
+	object-fit: cover;
+}
+h2.postItemBottonContent {
+	font-size: 12px;
+	font-weight: 500;
+	font-family: sans-serif;
+	color: rgba(0, 0, 0, .6);
+	padding: 0;
+	margin: 0;
+	margin-left: 6px;
+}
+
+
+
+
 
 
 .tooltipMenu {

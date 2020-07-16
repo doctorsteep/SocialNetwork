@@ -56,7 +56,7 @@
 										echo('</div>');
 									}
 								?>
-								<button class="searchInput"><?php echo($string_go_to_search); ?></button>
+								<button class="searchInput" onclick="window.location = 'find.php'"><?php echo($string_go_to_search); ?></button>
 							</div>
 
 							<script type="text/javascript">

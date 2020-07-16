@@ -90,6 +90,8 @@
 	$string_remove_photo = 'Удалить фотографию';
 	$string_public_phone = 'Публикация совершена с моб. устройства';
 	$string_public_pс = 'Публикация совершена с персонального компьютера';
+	$string_telegram_dev = "Группа разработчика в Telegram";
+	$string_find = "Поиск";
 
 	$string_confirm_finish = 'Завершение регистрации';
 	$string_confirm_finish_text = 'Почта успешно подтверждена!';

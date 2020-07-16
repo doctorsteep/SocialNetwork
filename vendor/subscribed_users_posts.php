@@ -83,6 +83,15 @@ if ($_SESSION['user_email'] != '' && $_SESSION['user_password'] != '') {
 									<?php if ($row_users_posts['repost'] == 1) { ?> <h2 class="postUserRepost"><?php echo($user_post['first_name'] . ', '); if ($user_post['sex'] == 'f') { echo($string_repost_f); } else { echo($string_repost_m); } echo(' <a href="profile.php?id=' . intval($user_creator_post['id']) . '">' . $nc->q($user_creator_post['first_name'], 1) . '</a>'); ?></h2> <?php } ?>
 									<?php if ($row_users_posts['type'] == 'ads') { ?> <h2 class="postUserRepost"><?php echo($string_message_post_ads); ?></h2> <?php } ?>
 								</div>
+								<?php if ($row_users_posts['type'] != 'ads') { ?>
+								<div class="divPostButtons">
+									<div class="divPostItemButton">
+										<?php $post_id_liked = intval($row_users_posts['id']); $check_post_liked = mysqli_query($connect, "SELECT * FROM `post_liked` WHERE `post` = '$post_id_liked'"); $check_post_my_liked = mysqli_query($connect, "SELECT * FROM `post_liked` WHERE `post` = '$post_id_liked' AND `creator` = '$my_id_get'"); ?>
+										<img draggable="false" oncontextmenu="return false" src="<?php if (mysqli_num_rows($check_post_my_liked) > 0) { ?>assets/icons/ic_liked_v2.png<?php } else { ?>assets/icons/ic_like_v2.png<?php } ?>" class="postItemButton">
+										<h2 class="postItemBottonContent"><?php echo(mysqli_num_rows($check_post_liked)); ?></h2>
+									</div>
+								</div>
+								<?php } ?>
 							</div>
 						<?php 
 					}
