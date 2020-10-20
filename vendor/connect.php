@@ -1,12 +1,12 @@
 <?php
-	header('Access-Control-Allow-Origin: https://vseti.fun');
+	header('Access-Control-Allow-Origin: ' . $_SERVER['HTTPS'] . $_SERVER['HTTP_HOST']);
 	header('Access-Control-Allow-Credentials: true');
 	header('Access-Control-Max-Age: 604800');
 	header("Content-type: text/html");
 
 	$db_host = 'localhost'; // ХОСТ БАЗЫ ДАННЫХ - НАПРИМЕР, localhost
 	$db_user = 'root'; // ПОЛЬЗОВАТЕЛЬ ОТ БАЗЫ ДАННЫХ - НАПРИМЕР, root
-	$db_password = ''; // ПАРОЛЬ ОТ БАЗЫ ДАННЫХ - НАПРИМЕР, 1234
+	$db_password = '1234'; // ПАРОЛЬ ОТ БАЗЫ ДАННЫХ - НАПРИМЕР, 1234
 	$db_name = 'social'; // ИМЯ БАЗЫ ДАННЫХ - НАПРИМЕР, doctorsteep
 
 	// mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
